@@ -1,4 +1,4 @@
-CREATE TABLE user
+CREATE TABLE appUser
 (
 	id uuid NOT NULL DEFAULT gen_random_uuid(),
 	username character varying(32) NOT NULL DEFAULT(''),
@@ -13,7 +13,7 @@ WITH
 );
 
 CREATE INDEX ix_user_username
-	ON user
+	ON appUser
 	USING btree(username);
 
 -----
