@@ -6,7 +6,7 @@ CREATE TABLE todolist
 	suggester character varying(32) NOT NULL DEFAULT(''),
 	content character varying(280) NOT NULL DEFAULT(''),
 	deadline timestamp without time zone,
-	CONSTRAINT user_pkey FOREIGN KEY (userid) REFERENCES appUser(id)
+	CONSTRAINT user_pkey FOREIGN KEY (userid) REFERENCES app_user(id)
 )
 WITH(
 	OIDS=FALSE
